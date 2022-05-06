@@ -1,0 +1,96 @@
+@import 'media-queries';
+
+.explore{
+  margin-top: 40px;
+  .title{
+    @include tablet{
+      margin-left: 25px;
+    }
+    @include mobile{
+      font-size: 24px;
+      margin-left: 15px;
+    }
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .at-cinema{
+    @include tablet{
+      background: rgb(18, 18, 18);
+    }
+    @include mobile{
+      background: rgb(18, 18, 18);
+    }
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover{
+      #angle-right{
+        color: #CCA414;
+      }
+    }
+    .freccia{
+          margin-left: 10px;
+           font-size: 20px;
+    }
+    .lateral-yellow{
+      @include mobile{
+        height: 28px;
+      }
+      width: 5px;
+      height: 35px;
+      background-color: #CCA414;
+      border-radius: 2px;
+    }
+
+    .text-cinema{
+      @include tablet{
+        margin-left: 25px;
+      }
+      @include mobile{
+        margin-left: 15px;
+        position: relative;
+        top: 10px;
+      }
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      #in-cinemas{
+        @include mobile{
+          font-size: 20px;
+        }
+        font-size: 24px;
+        margin-left: 10px;
+      }
+      #angle-right{
+        @include mobile{
+          font-size: 10px;
+          margin-top: 3px;
+        }
+        margin-left: 15px;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+    }
+
+    #near-you{
+      @include tablet{
+        margin-left: 25px;
+      }
+      @include mobile{
+        margin-left: 15px;
+        font-size: 15px;
+        position: relative;
+        top: 10px;
+      }
+      margin-top: 10px;
+      color: #b3b3b3;
+      font-size: 17.5px;
+    }
+  }
+
+  .fa-ticket-simple{
+    margin-right: 5px;
+    transform: rotate(-50deg);
+  }
+}

@@ -1,0 +1,74 @@
+@import 'media-queries';
+
+#new-film{
+  margin-top: 40px;
+
+  .duration-video{
+    bottom: 60px;
+  }
+  
+  .banner-bottom{
+    bottom: 50px;
+  }
+
+  .info-film-new{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+
+    .add-button-new-trailer{
+      .ribbon{
+        @include mobile{
+          font-size: 15px;
+        }
+        color: #2B2B2B;
+        font-size: 20px;
+      }
+     
+      .croce{
+         @include mobile{
+        left: 3.5px;
+        bottom: 21px;
+      }
+        color: white;
+        left: 7px;
+        bottom: 15px;
+      }
+    }
+
+    .title-film-trailer{
+      margin-left: 15px;
+      #data-out{
+        @include mobile{
+          font-size: 10px;
+        }
+        font-weight: bold;
+        color: rgb(122, 122, 122);
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+      }
+      h4{
+        @include mobile{
+          font-size: 14px;
+        }
+        font-weight: normal;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  
+}
+#prendi-biglietti{
+  @include tablet{
+      left: 70px;
+  }
+  color: rgb(87, 153, 239);
+  position: relative;
+  top: 15px;
+  left: 45px;
+}
+#prendi-biglietti:hover{
+  cursor: pointer;
+  text-decoration:underline;
+}

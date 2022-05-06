@@ -1,0 +1,204 @@
+@import 'media-queries';
+
+#menu-responsive{
+    @include tablet{
+        width: 40%;
+    }
+    @include mobile{
+        width: 58%;
+        
+    }
+    display:none;
+    height: 102%;
+    width: 24.5%;
+    background: rgb(31, 31, 31);
+    z-index: 2;
+    position:fixed;
+
+    #container-close{
+        height: 60px;
+        display: flex;
+        justify-content: right;
+        background: repeating-linear-gradient(
+        45deg,
+        rgb(31, 31, 31),
+        rgb(31, 31, 31) 6px,
+        rgb(58, 58, 58) 6px,
+        rgb(58, 58, 58) 9px
+        );
+
+        #btn-close{
+            color: white;
+            background: none;
+            position: relative;
+            top:5px;
+            right: 15px;
+            border: none;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #btn-close:hover{
+            background:rgba(73, 73, 73,0.5);
+        }
+    }
+
+    .menu-responsive-list{
+        display: flex;
+        margin-top: 30px;
+        cursor: pointer;
+        color: grey;
+        
+        #first-logo{
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+
+        .list{
+            display: flex;
+        }
+        .list h4{
+            color: white;
+        }
+        #list-options{
+            background: rgb(31, 31, 31);
+            color: grey;
+            border: none;
+            width:11.1rem;
+            position: relative;
+            cursor: pointer;
+        }
+        #list-options:hover{
+            color: white;
+        }
+        &:hover{
+            color: white;
+            .fa-square{
+                color: white;
+            }
+            .fa-circle{
+                color: white;
+            }
+        }
+    }
+    #second-logo{
+        margin-left: 17px;
+        margin-right: 8px;
+    }
+    #list-options-2{
+            background: rgb(31, 31, 31);
+            color: grey;
+            border: none;
+            width:9.3rem;
+            position: relative;
+            cursor: pointer;
+        }
+        #list-options-2:hover{
+            color: white;
+        }
+    #third-logo{
+        margin-left: 18px;
+        margin-right: 7px;
+
+        .fifth-logo-square{
+            color: gray;
+        }
+        .fifth-logo-play{
+            margin-top: 11.8rem;
+            margin-left: 18.5px;
+            font-size: 9px;
+        }
+    }
+   
+    #list-options-3{
+        background: rgb(31, 31, 31);
+        color: grey;
+        border: none;
+        width:10rem;
+        position: relative;
+        cursor: pointer;
+    }
+    #list-options-3:hover{
+        color: white;
+    }
+    #fourth-logo{
+        margin-left: 16px;
+        margin-right: 7px;
+
+        .third-logo-circle{
+            color: gray;
+        }
+    }
+    #list-options-4{
+        background: rgb(31, 31, 31);
+        color: grey;
+        border: none;
+        width:6.2rem;
+        position: relative;
+        cursor: pointer;
+    }
+    #list-options-4:hover{
+        color: white;
+    }
+
+    #fifth-logo{
+        margin-left: 16px;
+        margin-right: 7px;
+    }
+    #list-options-5{
+        background: rgb(31, 31, 31);
+        color: grey;
+        border: none;
+        width:9.2rem;
+        position: relative;
+        cursor: pointer;
+    }
+    #list-options-5:hover{
+        color: white;
+    }
+    #sixth-logo{
+        margin-left: 16px;
+        margin-right: 7px;
+    }
+    #list-options-6{
+        background: rgb(31, 31, 31);
+        color: grey;
+        border: none;
+        width:9.1rem;
+        position: relative;
+        cursor: pointer;
+    }
+    #list-options-6:hover{
+        color: white;
+    }
+
+    #footer-menu-responsive{
+        display: flex;
+        margin-top: 3rem;
+        margin-left: 17px;
+
+        &-text h5{
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        &-text p{
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        &-logo{
+            position: relative;
+            left: 35px;
+            top: 10px;
+            color: gray;
+            font-size: 15px;
+        }
+        &-logo:hover{
+            color: white;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+   
+}

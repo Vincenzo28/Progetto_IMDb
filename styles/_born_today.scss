@@ -1,0 +1,47 @@
+@import 'media-queries';
+
+.born-today{
+
+  margin-top: 40px;
+  @include mobile{
+    width: 100%;
+  }
+  .left-title{
+    @include tablet{
+      // width: 95%;
+    }
+    p{
+      font-size: 16px;
+    }
+
+  
+  }
+
+
+  .today{
+    margin-top: 20px;
+    display: flex;
+    .actor{
+    max-width: 190px;
+    cursor: pointer;
+
+    #age{
+      font-size: 14px;
+      color: #747474;
+    }
+    &:hover{
+      opacity: 0.8;
+    }
+    img{
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+    }
+    p{
+      margin-top: 5px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+  }
+}
+}

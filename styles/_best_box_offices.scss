@@ -1,0 +1,219 @@
+@import 'media-queries';
+
+#container-best-box{
+    @include tablet{
+        background: rgb(18, 18, 18);
+    }
+    @include mobile{
+        background: rgb(18, 18, 18);
+    }
+    margin-top: 5rem;
+
+    #best-box-title{
+        @include tablet{
+            margin-left: 25px;
+            position: relative;
+            top: 10px;
+        }
+    }
+    #best-box-title ul{
+        list-style: none;
+        display: flex;
+
+        .text{
+            @include mobile{
+                margin-top: 15px;
+                margin-left: 3px;
+                font-size: 20px;
+            }
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .left-border-title{
+            @include mobile{
+                height: 25px;
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+            border: 2px solid;
+            border-radius: 2px;
+            margin-right: 6px;
+            color: #CCA414;
+        }
+        #angle-right{
+            @include mobile{
+                font-size: 12px;
+                margin-top: 20px;
+            }
+            margin-left: 14px;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        &:hover{
+            #angle-right{
+                color: #CCA414;
+            }
+        }
+    }
+    #best-box-title p{
+        @include mobile{
+            margin-left: 15px;
+        }
+        cursor: pointer;
+        color: rgb(171, 171, 171);
+        margin-top: 10px
+    }
+
+            #best-box-film{
+                margin-top: 2.6rem;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            
+            }
+        #best-box-list{
+            display: flex;
+            
+            #best-box-film ul{
+                    display: flex;
+                    list-style: none; 
+
+                #left-border{
+                    border: 1px solid #CCA414;
+                    height: 20px;
+                    margin-right: 10px;
+                    margin-left: 5px;
+                }
+                #best-box-icon{
+                    position: relative;
+                    bottom: 10px;
+                    margin-right: 10px;
+                    &-croce{
+                        @include tablet{
+                            font-size: 12px;
+                            padding-left: 7px;
+                            padding-top: 8px;
+                        }
+                        @include laptop{
+                            font-size: 14px;
+                            padding-left: 8px;
+                        }
+                        @include mobile{
+                            font-size: 13px;
+                            padding-left: 7.5px;
+                        }
+                        position: absolute;
+                        padding-left: 9px;
+                        padding-top: 9px;
+                    }
+                    &-ribbon{
+                        @include tablet{
+                            font-size: 12px;
+                        }
+                        @include laptop{
+                            font-size: 14px;
+                        }
+                        @include mobile{
+                            font-size: 13px;
+                        }
+                        color: rgb(42, 41, 41);
+                    }
+                    &-ribbon:hover{
+                        color: rgb(54, 54, 54);
+                    }
+                }
+                #best-box-information h4{
+                    @include tablet{
+                        font-size: 14px;
+                    }
+                    @include laptop{
+                        font-size: 16px;
+                    }
+                    @include mobile{
+                        font-size: 13px;
+                    }
+                    margin-top: -5px;
+                }
+                #best-box-information p{
+                    font-size: 13px;
+                    margin-top: 4px;
+                    color:rgb(171, 171, 171);
+                    font-weight: bolder;
+                }
+                .fa-ticket-simple{
+                    @include tablet{
+                        left: 2rem;
+                    }
+                    @include laptop{
+                        left: 7rem;
+                    }
+                    @include mobile{
+                        left: -20px;
+                    }
+                    position: relative;
+                    transform: rotate(-40deg);
+                    color: #2f78d6;
+                    left: 14rem;
+                    margin-top: 6px;
+                }
+                #ticket-simple2{
+                    @include tablet{
+                        left: 12rem;
+                    }
+                    @include laptop{
+                        left: 17.5rem;
+                    }
+                    @include mobile{
+                        left: 45px;
+                    }
+                    left: 25rem;
+                }
+                #ticket-simple3{
+                    @include tablet{
+                        left: 13rem;
+                    }
+                    @include laptop{
+                        left: 18.5rem;
+                    }
+                    @include mobile{
+                        left: 55px;
+                    }
+                    left: 26rem;
+                }
+                #ticket-simple4{
+                    @include tablet{
+                        left:10rem;
+                    }
+                    @include mobile{
+                        left: 10px;
+                        bottom: 5px;
+                    }
+                    left: 24rem;
+                }
+            }
+            #best-box-right{
+                @include tablet{
+                    left: 4rem;
+                }
+                @include laptop{
+                    left: 10rem;
+                }
+                @include mobile{
+                    left: 13px;
+                }
+                position: relative;
+                left: 19rem;
+            }
+        } 
+}
+
+#best-box-left{
+    @include mobile{
+        margin-left: 15px;
+    }
+    @include tablet{
+        margin-left: 15px;
+    }
+}

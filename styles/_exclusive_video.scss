@@ -1,0 +1,95 @@
+@import 'media-queries';
+
+#exclusive-video h1{
+    @include tablet{
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+    @include mobile{
+        font-size: 23px;
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    margin-bottom: 40px;
+}
+
+.video-imdb{
+width: 100%;
+    @include tablet{
+        
+    }
+    @include mobile{
+        margin-left: 15px;
+    }
+    margin-top: 2rem;
+    display: flex;
+   
+        &-style{
+            position: relative;
+            
+            img{
+                @include mobile{
+                    width: 300px;
+                }
+                width: 410px;
+                transition: 0.2s all ease-in;
+            }
+            
+            .duration-video{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 30px;
+                left: 10px;
+                z-index: 1;
+
+                i{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                    margin-left: 5px;
+                }
+            }
+                h4:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            .banner-bottom{
+                @include mobile{
+                    width: 300px;
+                }
+                position: absolute;
+                bottom: 20px;
+                width: 410px;
+                height: 60px;
+                background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.177), rgb(0, 0, 0));
+            }
+        }
+}
+
+.video-imdb-style:hover{
+    width: 90rem;
+    img{
+       opacity: 0.8;
+       cursor: pointer;
+    }
+   
+    .duration-video{
+      .fa-circle-play{
+             color: #CCA414;
+     }
+
+     
+   }
+ }
+
+//  background responsive
+#background-responsive{
+    @include tablet{
+    background: rgb(18, 18, 18);
+    height: 24rem;
+    }
+}

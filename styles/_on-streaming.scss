@@ -1,0 +1,77 @@
+@import 'media-queries';
+
+.on-streaming{
+  margin-top: 40px;
+  position: relative;
+  #title{
+    @include tablet{
+      margin-left: 25px;
+    }
+    @include mobile{
+      font-size: 23px;
+      margin-left: 15px;
+    }
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .prime-video{
+    @include tablet{
+      background: rgb(18, 18, 18);
+      height: 5rem;
+      margin-bottom: -15px;
+    }
+    @include mobile{
+      background: rgb(18, 18, 18);
+      height: 5rem;
+      margin-bottom: -15px;
+      position: relative;
+      width: 100%;
+
+    }
+    margin-top: 10px;
+    button{
+      @include tablet{
+        margin-left: 25px;
+        background: rgb(18, 18, 18);
+      }
+      @include mobile{
+        background: rgb(18, 18, 18);
+        font-size: 13px;
+        margin-left: 25px;
+      }
+      font-size: 15px;
+      font-weight: bold;
+      padding: 10px;
+      background-color: black;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      color: white;
+      border-bottom: 3px #CCA414 solid;
+
+      &:hover{
+        @include mobile{
+          background: rgba(white,  0.1);
+        }
+        background-color: rgb(12, 12, 12);
+        cursor: pointer;
+      }
+    }
+    p{
+      @include tablet{
+        margin-left: 25px;
+      }
+      @include mobile{
+        margin-left: 18px;
+      }
+      margin-top: 10px;
+      font-size: 15px;
+    }
+  }
+}
+.swiper-wrapper{
+  @include tablet{
+    background: rgb(18, 18, 18);
+  }
+}

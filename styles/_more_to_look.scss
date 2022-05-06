@@ -1,0 +1,63 @@
+@import 'media-queries';
+
+#more-to-look{
+    @include tablet{
+        position: relative;
+        background: rgb(18, 18, 18);
+        margin-top: -10px;
+    }
+    @include mobile{
+        background: rgb(18, 18, 18);
+    }
+    height: 150px;
+    margin-top: 2rem;
+
+  
+    
+    .left-title p{
+        @include tablet{
+            font-size: 15px;
+        }
+        }
+
+
+    #buttons{
+        @include tablet{
+            margin-left: 25px;
+        }
+        @include mobile{
+            display: flex;
+        }
+        margin-top: 20px;
+
+
+        #btn-space{
+            @include mobile{
+                margin-right: 0px;
+            }
+            margin-right: 18px;
+        }
+        
+        .btn{
+            @include laptop{
+                padding: 7px 70px;
+            }
+            @include mobile{
+                padding: 7px 60px;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            color: white;
+            background: black;
+            border: 2px solid white;
+            padding: 5px 80px;
+            font-size: 14px;
+            border-radius: 2px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: rgba( white, 0.1);
+        }
+    }
+}

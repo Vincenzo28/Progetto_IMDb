@@ -1,0 +1,109 @@
+@import 'media-queries';
+
+#video-list{
+    @include tablet{
+        background: rgb(18, 18, 18);
+        margin-top: 2.5rem;
+    }
+    @include mobile{
+        background: rgb(18, 18, 18);
+    }
+    height: 350px;
+    margin-top: 3rem;
+    
+
+    &-title ul{
+        @include tablet{
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+        @include mobile{
+            position: relative;
+            top: 20px;
+            left: 15px;
+        }
+       display: flex;
+       list-style: none;
+
+       .left-border-title{
+           @include mobile{
+               height: 28px;
+           }
+           border: 2px solid;
+           border-radius: 2px;
+           height: 2rem;
+           color: rgb(245, 197, 23);
+       }
+        &:hover{
+            #angle-right{
+                color: #CCA414;
+            }
+        }
+        
+       .text{
+           @include mobile{
+               font-size: 20px;
+           }
+           font-weight: bolder;
+           font-size:1.5rem;
+           margin-left: 8px;
+           margin-top: 2px;
+           cursor: pointer;
+       }
+       #angle-right{
+           @include mobile{
+               font-size: 10px;
+               margin-top: 9px;
+               margin-left: 18px;
+           }
+           margin-left: 20px;
+           margin-top: 10px;
+           font-size: 14px;
+       }
+
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       margin-top: 4rem;
+
+       #video-list-icon{
+           margin-bottom: 20px;
+
+           &-croce{
+               position: absolute;
+               padding-left: 9px;
+               padding-top: 9px;
+           }
+           &-ribbon{
+               color: rgb(49, 49, 49);
+           }
+       }
+       &-text {
+        #p-bolder{ 
+            font-weight: bolder;
+            font-size: 18x;
+            padding-bottom: 5px;
+            margin-left: 49px;
+        }
+       }
+       &-button{
+           margin-top: 30px;
+
+          #btn{
+              background: rgb(245, 197, 23);
+              border: none;
+              padding: 12px 24px;
+              border-radius: 4px;
+              font-weight: bolder;
+          }
+          #btn:hover{
+              background: rgb(226, 182, 22);
+          }
+       }
+    }
+}
+

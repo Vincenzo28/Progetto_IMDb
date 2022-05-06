@@ -1,0 +1,1153 @@
+@import "media-queries";
+
+#background-grey{
+    background: rgb(31, 31, 31);
+    letter-spacing: 0.5px;
+    overflow: hidden;
+
+
+
+#more-trailer-top{
+    @include laptop{
+        width: 1100px
+    }
+    @include tablet{
+        width: 710px;
+    }
+    @include flexBeetween;
+    margin: 0 auto;
+    width: 1280px;
+
+}
+
+#more-trailer-title{
+    @include tablet{
+        margin-top: 20px;
+    }
+    @include mobile{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    position: relative;
+}
+
+#more-trailer-title h1{
+    @include tablet{
+        font-size: 32px;
+        white-space: nowrap;
+    }
+    @include mobile{
+        font-size: 32px;
+        white-space: nowrap;
+    }
+    font-weight:400;
+    margin-bottom: 5px;
+    font-size: 48px;
+}
+#more-trailer-title p{
+    @include tablet{
+        font-size: 14px;
+    }
+    color: #BCBCBC;
+}
+#more-trailer-valutations{
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+    margin-top: 60px;
+}
+#more-trailer-valutations ul{
+    display: flex;
+    list-style: none;
+
+    #li-1{
+        position: relative;
+        right: 50px;
+        .fa-star{
+            color: rgb(245, 201, 55);
+            font-size: 20px;
+            position: relative;
+            top: 15px;
+            left: 20px;
+        }
+        #p-10{
+            font-size: 16px;
+            position: relative;
+            left: 82px;
+            bottom: 36px;
+        }
+        #p-votes{
+            font-size: 12px;
+            position: relative;
+            bottom: 36px;
+            left: 50px;
+        }
+    }
+    #li-1 h4{
+        font-size: 20px;
+        position: relative;
+        left: 50px;
+        bottom: 16px;
+    }
+   
+    li p{
+        font-size: 13px;
+        color: #BCBCBC;
+    }
+
+    #li-2{
+        position: relative;
+        right: 30px;
+
+        .fa-star-2{
+            color: rgb(101, 160, 240);
+            font-size: 20px;
+            position: relative;
+            top: 15px;
+            left: 29px;
+        }
+        #valuta{
+            font-size: 20px;
+            color: rgb(101, 160, 240);
+            position: relative;
+            left: 59px;
+            bottom: 7px;
+        }
+    }
+    #li-3{
+        #arrow-trend{
+            border: 2px solid red;
+            border-radius: 50%;
+            color: red;
+            position: relative;
+            top: 16px;
+            font-size: 18px;
+        }
+        #p-17{
+            font-size: 18px;
+            color: white;
+            position: relative;
+            left: 30px;
+            bottom: 6px;
+        }
+        .fa-caret-down{
+            position: relative;
+            left: 58px;
+            bottom: 28px;
+            font-size: 12px;
+        }
+        #p-6{
+            font-size: 15px;
+            position: relative;
+            left: 68px;
+            bottom: 45px;
+        }
+    }
+
+   
+   
+
+}
+ #second-container{
+     @include laptop{
+         width: 1100px;
+     }
+     @include tablet{
+         width: 710px;
+         margin-top: 10px;
+     }
+    margin: 0 auto;
+    width: 1280px;
+    height: 50px;
+    background-color: rgb(49, 49, 49);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+ #second-container ul{
+     @include mobile{
+        justify-content: center;
+     }
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+#second-container ul li{
+    // @include mobile{
+    //     position: relative;
+    //     right: 49rem;
+    // }
+    font-size: 14px;
+}
+#second-container ul li p{
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+       display: none;
+    }
+
+}
+#all-elements{
+    @include mobile{
+        position: relative;
+        right: 20rem;
+    }
+    @include tablet{
+        position: relative;
+        left: 16px;
+    }
+}
+.second-container-text{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 18px;
+    display: flex;
+}
+.second-container-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.point{
+    @include mobile{
+        display: none;
+    }
+    margin-top: 18px;
+}
+.point:hover{
+    cursor: default;
+}
+
+.fa-table-cells-large{
+    @include tablet{
+        left: 20px;
+        font-size: 20px;
+    }
+    @include mobile{
+        right: 20rem;
+        font-size: 20px;
+    }
+    font-size: 18px;
+    margin-right: 8px;
+    position: relative;
+    bottom: 2px;
+}
+#right-line{
+    @include mobile{
+        right: 21rem;
+    }
+    height: 25px;
+    border: 1px solid grey;
+    position: relative;
+    bottom: 5px;
+}
+
+.fa-share-nodes{
+    @include tablet{
+        font-size: 22px;
+        bottom: 12px;
+    }
+    @include mobile{
+        right: 22rem;
+    }
+    font-size: 20px;
+    color: white;
+    position: relative;
+    bottom: 8px;
+    right: 7px;
+    padding: 8px;
+}
+.fa-share-nodes:hover{
+    background-color: rgba($color: white, $alpha: 0.1);
+    text-decoration: none;
+    border-radius: 50%;
+}
+#topic{
+    @include mobile{
+     
+    }
+    padding: 8px;
+    position: relative;
+    bottom: 8px;
+}
+#topic:hover{
+    @include tablet{
+        
+    }
+    text-decoration: none;
+    background-color: rgba($color: white, $alpha: 0.1);
+    border-radius: 2px;
+}
+
+#share-container:hover{
+    text-decoration: none;
+}
+
+
+
+#container-trailer{
+    @include laptop{
+        width: 1100px;
+        display: flex;
+        height: 350px;
+    }
+     @include tablet{
+        width: 710px;
+        height: 350px;
+    }
+    display: flex;
+    margin: 0 auto;
+    width: 1280px;
+
+    #trailer-poster{
+        @include laptop{
+            width: 230px;
+            height: 99%;
+        }
+        @include tablet{
+            width: 190px;
+            height: 100%;
+        }
+        width: 280px;
+        height: 100%;
+    }
+}
+#left-poster{
+    @include mobile{
+        display: none;
+    }
+    margin-right: 10px;
+}
+
+#mio-video{
+    @include laptop{
+        width: 680px;
+        height: 345px;
+        position: relative;
+        left: 240px;
+        bottom: 349px;
+    }
+    @include tablet{
+        width: 515px;
+        height: 286px;
+        position: relative;
+        left: 195px;
+        bottom: 290px;
+    }
+    @include mobile{
+        width: 500px;
+        height: 280px;
+    }
+    width: 780px;
+    height: 450px;
+}
+
+#right-trailer{
+    @include laptop{
+        width: 178px;
+        position: relative;
+        left: 57.7rem;
+        bottom: 43.3rem;
+    }
+    @include tablet{
+        width: 100%;
+        position: relative;
+        bottom: 17.5rem;
+        height: 50px;
+    }
+    @include mobile{
+        width: 100%;
+        position: relative;
+        height: 50px;
+    }
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    background: rgb(49, 49, 49);
+    width: 100%;
+}
+#right-trailer:hover{
+    background-color: rgba($color: white, $alpha: 0.1);
+    cursor: pointer;
+}
+#right-logo-video{
+    @include laptop{
+        position: relative;
+        right: 10px;
+        top: 25px;
+    }
+    @include tablet{
+       position: relative; 
+       left: 30px;
+       top: 15px;
+    }
+    @include mobile{
+       position: relative; 
+       left: 10px;
+       top: 10px;
+    }
+}
+
+#square-logo{
+    color: white;
+    
+}
+#fa-square{
+    @include tablet{
+        font-size: 15px;
+    }
+    @include mobile{
+        font-size: 15px;
+    }
+        font-size: 30px;
+}
+
+#play-logo{
+    @include tablet{
+        font-size: 6px;
+        padding-left: 0px;
+        padding-top: 4px;
+    }
+    @include mobile{
+        font-size: 6px;
+        padding-left: 0px;
+        padding-top: 4px;
+    }
+    color: black;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+#video{
+    @include laptop{
+        height: 10.6rem;
+    }
+    position: relative;
+    left: 90px;
+    top: 40px;
+}
+#video p{
+    @include laptop{
+        top: 30px;
+        right: 25px;
+    }
+    @include tablet{
+        left: 55px;
+        top: -3px;
+    }
+    @include mobile{
+        left: 35px;
+        top: -8px;
+    }
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+#foto{
+    @include laptop{
+        height: 10.6rem;
+        top: 45px;
+        left: 77px;
+    }
+    @include tablet{
+        left: 32rem;
+        bottom: 44px;
+    }
+    @include mobile{
+        left: 21rem;
+        bottom: 44px;
+    }
+    position: relative;
+    left: 90px;
+    bottom: 40px;
+
+    .fa-images{
+        @include tablet{
+            font-size: 14px;
+        }
+        @include mobile{
+            font-size: 14px;
+        }
+        font-size: 30px;
+    }
+}
+
+#foto p{
+    @include tablet{
+        top: -17px;
+        left: 25px;
+    }
+    @include mobile{
+        top: -17px;
+        left: 25px;
+    }
+    position: relative;
+    font-size: 13px;
+    top: 10px;
+    right: 10px;
+}
+
+#divider{
+    @include tablet{
+        width: 0%;
+        height: 60px;
+        position: relative;
+        left: 23rem;
+    }
+    @include mobile{
+        width: 0%;
+        height: 57px;
+        position: relative;
+        left: 16rem;
+    }
+    border: 2px solid rgb(31, 31, 31);
+    width: 100%;
+   
+}
+
+.buttons-news{
+    margin: 0 auto;
+    width: 1280px;
+    @include tablet{
+      padding-left: 25px;
+      height: 4rem;
+      padding-top: 15px;
+      margin-top: 0;
+    }
+    @include mobile{
+      padding-left: 25px;
+      height: 4rem;
+      padding-top: 15px;
+      margin-top: 0;
+      height: 7rem;
+    }
+    @include laptop{
+        width: 1100px;
+    }
+
+    margin-top: 20px;
+    button{
+      background-color: rgb(31, 31, 31);
+      color: white;
+      border: 1px white solid;
+      border-radius: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-right: 5px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      
+      &:hover{
+        cursor: pointer;
+        background-color: rgba(131, 131, 131, 0.171);
+      }
+    }
+  }
+  #btn-news{
+    @include mobile{
+      margin-top: 10px;
+      position: relative;
+      right: 10px;
+    }
+  }
+  #final-container{
+    @include laptop{
+        width: 1100px;
+    }
+    @include tablet{
+        width: 710px;
+        display: flex;
+        flex-direction: column;
+    }
+    @include mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+    }
+      display: flex;
+      margin: 0 auto;
+      width: 1280px;
+  }
+
+  #final-container-left{
+      @include tablet{
+          width: 100%;
+          margin-top: 10px;
+      }
+      @include mobile{
+          width: 90%;
+          margin-top: 0px;
+      }
+      width: 60%;
+      margin-top: 20px;
+      
+  }
+  #plot h4{
+      @include tablet{
+          font-size: 16px;
+      }
+      @include mobile{
+          font-size: 16px;
+      }
+      font-size: 17px;
+      font-weight: 400;
+  }
+  .hr{
+      @include tablet{
+          display: none;
+      }
+      @include mobile{
+          display: none;
+      }
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  #regia{
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+      display: flex;
+  }
+
+  #regia-blu{
+    @include bluText;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+    bottom: 1px;
+  }
+  #regia-blu:hover{
+      cursor: pointer;
+      text-decoration: underline;
+  }
+
+  #scenegg{
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+    &:hover{
+        cursor: pointer;
+        #angle-right{
+            color: rgb(244, 197, 24);
+        }
+        h4{
+            color: rgba($color: white, $alpha: 0.7);
+        }
+    }
+  }
+  #scenegg ul{
+      margin-top: 5px;
+    list-style: none;
+    display: flex;
+  }
+  #scenegg ul li{
+      @include bluText;
+      margin-right: 5px;
+  }
+  #scenegg ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #based{
+      color: rgb(188, 188, 188);
+      font-size: 17px;
+      font-weight: 400;
+  }
+    #angle-right{
+        @include laptop{
+            left: 33px;
+        }
+      color: white;
+      font-size: 13px;
+      position: relative;
+      left: 140px;
+      bottom: 8px;
+  }
+  #angle-right:hover{
+      text-decoration: none;
+  }
+
+  #star{
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+      display: flex;
+    &:hover{
+        cursor: pointer;
+        .fa-angle-right{
+            color: rgb(244, 197, 24);
+        }
+        h4{
+            color: rgba($color: white, $alpha: 0.7);
+        }
+    }
+  }
+
+  #star ul{
+      list-style: none;
+      display: flex;
+      margin-left: 10px;
+  }
+  #star ul li{
+    @include bluText;
+    margin-right: 5px;
+}
+#star ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#fa-angle-right{
+    @include laptop{
+        left: 240px;
+    }
+    color: white;
+    font-size: 13px;
+    position: relative;
+    left: 346px;
+}
+#fa-angle-right:hover{
+    text-decoration: none;
+}
+
+#information{
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+    display: flex;
+    height: 2rem;
+
+    &:hover{
+        cursor: pointer;
+        h5{
+            text-decoration: underline;
+        }
+    }
+}
+
+#information h5{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+#pro{
+    color: rgb(52, 197, 243);
+}
+#link-information{
+    font-size: 12px;
+    position: relative;
+    top: 3.5px;
+    left: 2px;
+}
+
+#final-container-right{
+    @include tablet{
+        margin-left: 0px;
+    }
+    @include mobile{
+        margin-left: 0px;
+    }
+    margin-left: 80px;
+}
+#watch-prime{
+    @include tablet{
+        width: 60%;
+    }
+    @include mobile{
+        width: 85%;
+    }
+    background-color: rgb(244, 197, 24);
+    color: black;
+    height: 40px;
+    width: 113.5%;
+    border-radius: 4px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba($color: rgb(244, 197, 24), $alpha: 0.9);
+    }
+}
+
+#watch-prime ul{
+    display: flex;
+    list-style: none;
+}
+#regular-circle{
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    left: 7px;
+}
+#watch{
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+#prime-square{
+    font-size: 8px;
+}
+#buy{
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+    right: 152px;
+}
+
+#add-video{
+    @include tablet{
+        width: 54%;
+    }
+    @include mobile{
+        width: 76.4%;
+    }
+    background-color: rgb(49, 49, 49);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba($color: white, $alpha: 0.1);
+    }
+}
+
+#add-video p{
+    margin-left: 10px;
+    position: relative;
+    top: 8px;
+    font-size: 14px;
+}
+#fa-plus{
+    font-size: 17px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+#angle{
+    @include tablet{
+        left: 24.1rem;
+    }
+    @include mobile{
+        left: 24rem;
+    }
+    background-color: rgb(49, 49, 49);
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    position: relative;
+    left: 19.7rem;
+    bottom: 40px;
+    &:hover{
+        cursor: pointer;
+        background-color: rgba($color: white, $alpha: 0.1);
+    }
+}
+.fa-angle-down{
+    font-size: 15px;
+    position: relative;
+    left: 14px;
+    top: 10px;
+}
+
+#recensioni{
+    position: relative;
+    bottom: 20px;
+    @include bluText;
+    #p1{
+        font-size: 16px;
+    }
+    #p2{
+        font-size: 14px;
+        position: relative;
+        left: 39px;
+        bottom: 17.6px;
+    }
+    #p3{
+        font-size: 16px;
+        position: relative;
+        left: 210px;
+        bottom: 34.9px;
+    }
+    #p4{
+        font-size: 14px;
+        position: relative;
+        left: 242px;
+        bottom: 52px;
+    }
+    #p5{
+        color: white;
+        padding: 3px;
+        background: rgb(84, 167, 43);
+        width: 20px;
+        font-size: 14px;
+        position: relative;
+        bottom: 40px;
+    }
+    #p5:hover{
+        cursor: pointer;
+    }
+    #p6{
+        font-size: 14px;
+        position: relative;
+        bottom: 59px;
+        left: 25px;
+    }
+    #p6:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+}
+
+.recensioni-numero:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+// responsive
+
+.mobile-valutations{
+    @include tablet{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    @include mobile{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    display: none;
+}
+.mobile-valutations ul{
+    @include tablet{
+        list-style: none;
+        display: flex;
+    }
+    @include mobile{
+        list-style: none;
+        display: flex;
+    }
+}
+
+.li-1{
+    @include tablet{
+        display: flex;
+       margin-right: 30px;
+        #mobile-star{
+            color: rgb(247, 201, 41);
+            margin-right: 5px;
+        }
+        #p-10{
+            font-size: 16px;
+            margin-right: 10px;
+            color: #BCBCBC;
+        }
+        #p-votes{
+            font-size: 14px;
+            color: #BCBCBC;
+            position: relative;
+            top: 2px;
+        }
+    }
+    @include mobile{
+        display: flex;
+       margin-right: 30px;
+        #mobile-star{
+            color: rgb(247, 201, 41);
+            margin-right: 5px;
+        }
+        #p-10{
+            font-size: 16px;
+            margin-right: 10px;
+            color: #BCBCBC;
+        }
+        #p-votes{
+            font-size: 14px;
+            color: #BCBCBC;
+            position: relative;
+            top: 2px;
+        }
+    }
+} 
+
+.li-2{
+    @include tablet{
+        display: flex;
+        margin-right: 30px;
+        #mobile-star-2{
+            @include bluText;
+            margin-right: 5px;
+        }
+    }
+    @include mobile{
+        display: flex;
+        margin-right: 30px;
+        #mobile-star-2{
+            @include bluText;
+            margin-right: 5px;
+        }
+    }
+}
+
+.li-2 p{
+    @include tablet{
+        @include bluText;
+    }
+    @include mobile{
+        @include bluText;
+    }
+}
+
+.li-3{
+    @include tablet{
+        display: flex;
+
+        .arrow-trend{
+            border: 2px solid red;
+            border-radius: 50%;
+            color: red;
+            margin-right: 5px;
+        }
+        #p-17{
+            color: #BCBCBC;
+            margin-right: 8px;
+        }
+        .caret-down{
+            color: #BCBCBC;
+            font-size: 12px;
+            position: relative;
+            top: 4px;
+            margin-right: 3px;
+        }
+        #p-6{
+            color: #BCBCBC;
+            font-size: 14px;
+            position: relative;
+            top: 3px;
+        }
+    }
+    @include mobile{
+        display: flex;
+
+        .arrow-trend{
+            border: 2px solid red;
+            border-radius: 50%;
+            color: red;
+            margin-right: 5px;
+        }
+        #p-17{
+            color: #BCBCBC;
+            margin-right: 8px;
+        }
+        .caret-down{
+            color: #BCBCBC;
+            font-size: 12px;
+            position: relative;
+            top: 4px;
+            margin-right: 3px;
+        }
+        #p-6{
+            color: #BCBCBC;
+            font-size: 14px;
+            position: relative;
+            top: 3px;
+        }
+    }
+}
+
+#crediti-in-evidenza{
+    @include tablet{
+        display: block;
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        &
+        .angle-evidenza{
+            margin-right: 25px;
+            font-size: 13px;
+            position: relative;
+            top: 3px;
+            right: 35px;
+        }
+    }
+    @include mobile{
+        display: block;
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        &
+        .angle-evidenza{
+            margin-right: 25px;
+            font-size: 13px;
+            position: relative;
+            top: 3px;
+            right: 35px;
+        }
+    }
+    display: none;
+}
+#crediti-in-evidenza h5{
+    font-size: 16px;
+}
+#crediti-in-evidenza h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#final-hr{
+    @include tablet{
+        display: block;
+        position: relative;
+        bottom: 60px;
+    }
+    @include mobile{
+        display: block;
+        position: relative;
+        bottom: 60px;
+    }
+    display: none;
+}
+
+#scopri-di-piu{
+    @include tablet{
+        display: block;
+        position: relative;
+        left: 20px;
+        bottom: 40px;
+    }
+    @include mobile{
+        display: block;
+        position: relative;
+        left: 20px;
+        bottom: 40px;
+    }
+    display: none;
+}
+#scopri-di-piu p{
+    @include bluText;
+}
+}

@@ -1,0 +1,11 @@
+.left-title ul{
+
+    .text{
+        cursor: pointer;
+    }
+    &:hover{
+        #angle-right{
+            color: #CCA414;
+        }
+    }
+}

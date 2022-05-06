@@ -1,0 +1,51 @@
+.watching{
+  margin-top: 40px;
+  .title-watching{
+    @include tablet{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      right: 14.6rem;
+    }
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      right: 8.5rem;
+    }
+    @include flexBeetween;
+    p{
+      @include tablet{
+        position: relative;
+        right: 14px;
+        font-size: 14px;
+      }
+      @include mobile{
+        font-size: 13px;
+        position: relative;
+        right: 20px;
+      }
+      color: #4c90e9;
+      font-weight: bold;
+      padding: 10px;
+      transition: 0.2s all ease-in;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #355e941a;
+      }
+    }
+    h1{
+      @include mobile{
+        color: rgb(237, 191, 25);
+        font-size: 23px;
+        position: relative;
+        right: 25px;
+
+      }
+    }
+  }
+  .swiper{
+    margin-top: 20px;
+  }
+}

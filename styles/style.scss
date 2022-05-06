@@ -1,0 +1,60 @@
+@import 'media-queries';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container{
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    width: 1280px;
+    overflow: hidden;
+    
+    @include laptop{
+        width: 90%;
+    }
+    @include tablet{
+        width: 100%;
+        margin: 5px;
+
+    }
+    @include mobile{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+@import 'utilies';
+@import 'swiper_film_imbd';
+@import 'swiper_hero_section';
+@import "navbar";
+@import 'evidence-today';
+@import 'watching';
+@import 'from_your_video_list';
+@import 'more_to_look';
+@import 'exclusive_video';
+@import 'on-streaming';
+@import 'explore';
+@import 'audience_favorites';
+@import 'best_box_offices';
+@import 'new_film';
+@import 'other-video';
+@import 'born_today';
+@import 'principal_news';
+@import 'recently_seen';
+@import 'footer';
+@import 'menu_responsive';
+@import 'download_app';
+@import 'button_search_mobile';
+@import 'trailer-page';
+@import 'more-trailer';

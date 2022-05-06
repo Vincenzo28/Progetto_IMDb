@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!------- EXTERNAL LINKS ------->
+
+  <link rel="icon" href="../images/imdb_logo.png">
+
+  <!-- SWIPER FONT -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- LINK CSS STYLES -->
+  <link rel="stylesheet" href="../styles/style.css">
+
+  <!-- FONT ROBOTO LINK -->
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- LINK ANIMATE CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- VIDEO.JS -->
+  <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+
+  <title>Spider-man: No Way Home (2021) - IMDb</title>
+</head>
+<body>
+   <!-- Menu -->
+   <div id="menu-container">
+    <div id="menu-container-logo">
+        <a href="./index.html"><img src="../images/logo-Navbar.jpg" alt="" id="menu-logo"></a>
+        <button id="close-menu"><img src="../images/X.png" alt="" id="close-menu-x"></button>
+    </div>
+    <div class="menu-container-firstrow">
+            <div class="first">
+                <div id="first-logo">
+                    <i class="fa-solid fa-film"></i>
+                </div>
+                    <div>
+                        <h2>Film</h2>
+                    <ul class="menu-list">
+                        <li><a href="">Calendario uscite</a> </li>
+                        <li><a href="">Versioni DVD e Blu-ray</a> </li>
+                        <li><a href="">I 250 migliori film</a> </li>
+                        <li><a href="">Film più popolari</a> </li>
+                        <li><a href="">Cerca film per genere</a> </li>
+                        <li><a href="">I migliori botteghini</a> </li>
+                        <li><a href="">Orari e biglietti</a> </li>
+                        <li><a href="">Nei cinema</a> </li>
+                        <li><a href="">Prossimamente</a> </li>
+                        <li><a href="">Notizie film</a> </li>
+                        <li><a href="">Film indiani in evidenza</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second">
+                <div class="second-logo">
+                    <i class="fa-solid fa-tv"></i>
+                </div>
+                    <div>
+                         <h2>Serie TV</h2>
+                         <ul class="menu-list">
+                             <li><a href="">Cosa c'è in TV e streaming</a> </li>
+                             <li><a href="">Le 250 migliori serie</a> </li>
+                             <li><a href="">Le serie più popolari</a> </li>
+                             <li><a href="">Cerca programmi TV per genere</a> </li>
+                             <li><a href="">Notizie TV</a> </li>
+                             <li><a href="">Serie TV indiane in evidenza</a> </li>
+                         </ul>
+                    </div>
+            </div>
+            <div class="third">
+                <div class="third-logo">
+                    <div class="third-logo-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="third-logo-circle">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                </div>
+                    <div>
+                        <h2>Premi ed eventi</h2>
+                            <ul class="menu-list">
+                                <li><a href="">Oscar</a> </li>
+                                <li><a href="">Vincitori come Migliori film</a> </li>
+                                <li><a href="">Emmy</a> </li>
+                                <li><a href="">STARmeter Awards</a> </li>
+                                <li><a href="">San Diego Comic-Con</a> </li>
+                                <li><a href="">New York Comic-Con</a> </li>
+                                <li><a href="">Sundace Film Festival</a> </li>
+                                <li><a href="">Toronto International Film Festival</a> </li>
+                                <li><a href="">Awards Central</a> </li>
+                                <li><a href="">Festival Central</a> </li>
+                                <li><a href="">Tutti gli eventi</a> </li>
+                            </ul>
+                    </div>
+            </div>
+    </div>
+    <div class="menu-container-secondrow">
+        <div class="fourth">
+                <div class="fourth-logo">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div>
+                    <h2>Celebrità</h2>
+                        <ul class="menu-list">
+                            <li><a href="">Nati oggi</a> </li>
+                            <li><a href="">Celebrità più popolari</a> </li>
+                            <li><a href=""> Notizie sulle celebrità</a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="fifth">
+            <div class="fifth-logo">
+                <div class="fifth-logo-play">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="fifth-logo-square">
+                    <i class="fa-solid fa-square"></i>
+                </div>
+            </div>
+            <div>
+                <h2>Guarda</h2>
+                    <ul class="menu-list">
+                        <li><a href="">Cosa guardare</a> </li>
+                        <li><a href="">Ultimi trailer</a> </li>
+                        <li><a href="">Originali IMDb</a> </li>
+                        <li><a href="">Preferiti IMDb</a> </li>
+                        <li><a href="">Podcast IMDb</a> </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="sixth">
+            <div class="sixth-logo">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div>
+                <h2>Comunità</h2>
+                    <ul class="menu-list">
+                        <li><a href="">Centro assistenza</a> </li>
+                        <li><a href="">Zona collaboratori</a> </li>
+                        <li><a href=""> Sondaggi</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu tablet e smartphone -->
+<div id="menu-responsive">
+      <div id="container-close">
+          <button id="btn-close">X</button>
+      </div>
+      <!-- Primo -->
+      <div class="menu-responsive-list">
+          <div id="first-logo">
+            <i class="fa-solid fa-film"></i>
+         </div>
+         <div class="list">
+           <h4>Film</h4>
+           <select name="Film" id="list-options">
+             <option selected value=""> </option>
+             <option value="">Calendario uscite</option>
+             <option value="">Versioni DVD e Blu-ray</option>
+             <option value="">I 250 migliori film</option>
+             <option value="">Film più popolari</option>
+             <option value="">Cerca film per genere</option>
+             <option value="">I migliori botteghini</option>
+             <option value="">Orari e biglietti</option>
+             <option value="">Prossimamente</option>
+             <option value="">Notizie film</option>
+             <option value="">Film indiani in evidenza</option>
+           </select>
+         </div>
+      </div>
+      <!-- Secondo -->
+      <div class="menu-responsive-list">
+          <div id="second-logo">
+            <i class="fa-solid fa-tv"></i>
+         </div>
+         
+         <div class="list">
+           <h4>Serie TV</h4>
+           <select name="Film" id="list-options-2">
+             <option selected value=""> </option>
+             <option value="">Cosa c'è in TV e streaming</option>
+             <option value="">Le 250 migliori serie</option>
+             <option value="">Le serie più popolari</option>
+             <option value="">Cerca programmi TV per genere</option>
+             <option value="">Notizie TV</option>
+             <option value="">Serie TV indiane in evidenza</option>
+           </select>
+         </div>
+      </div>
+      <!-- Terzo -->
+      <div class="menu-responsive-list">
+          <div id="third-logo">
+            <div class="fifth-logo-play">
+              <i class="fa-solid fa-play"></i>
+          </div>
+          <div class="fifth-logo-square">
+              <i class="fa-solid fa-square"></i>
+          </div>
+         </div>
+         
+         <div class="list">
+           <h4>Guarda</h4>
+           <select name="Film" id="list-options-3">
+             <option selected value=""> </option>
+             <option value="">Calendario uscite</option>
+             <option value="">Versioni DVD e Blu-ray</option>
+             <option value="">I 250 migliori film</option>
+             <option value="">Film più popolari</option>
+             <option value="">Cerca film per genere</option>
+             <option value="">I migliori botteghini</option>
+             <option value="">Orari e biglietti</option>
+             <option value="">Prossimamente</option>
+             <option value="">Notizie film</option>
+             <option value="">Film indiani in evidenza</option>
+           </select>
+         </div>
+      </div>
+      <!-- Quarto -->
+      <div class="menu-responsive-list">
+          <div id="fourth-logo">
+            <div class="third-logo">
+              <div class="third-logo-star">
+                  <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="third-logo-circle">
+                  <i class="fa-solid fa-circle"></i>
+              </div>
+          </div>
+         </div>
+         
+         <div class="list">
+           <h4>Premi ed eventi</h4>
+           <select name="Film" id="list-options-4">
+             <option selected value=""> </option>
+             <option value="">Calendario uscite</option>
+             <option value="">Versioni DVD e Blu-ray</option>
+             <option value="">I 250 migliori film</option>
+             <option value="">Film più popolari</option>
+             <option value="">Cerca film per genere</option>
+             <option value="">I migliori botteghini</option>
+             <option value="">Orari e biglietti</option>
+             <option value="">Prossimamente</option>
+             <option value="">Notizie film</option>
+             <option value="">Film indiani in evidenza</option>
+           </select>
+         </div>
+      </div>
+       <!-- Quinto -->
+      <div class="menu-responsive-list">
+          <div id="fifth-logo">
+            <i class="fa-solid fa-user-group"></i>
+         </div>
+        
+         <div class="list">
+           <h4>Celebrità</h4>
+           <select name="Film" id="list-options-5">
+             <option selected value=""> </option>
+             <option value="">Calendario uscite</option>
+             <option value="">Versioni DVD e Blu-ray</option>
+             <option value="">I 250 migliori film</option>
+             <option value="">Film più popolari</option>
+             <option value="">Cerca film per genere</option>
+             <option value="">I migliori botteghini</option>
+             <option value="">Orari e biglietti</option>
+             <option value="">Prossimamente</option>
+             <option value="">Notizie film</option>
+             <option value="">Film indiani in evidenza</option>
+           </select>
+         </div>
+      </div>
+      <!-- Sesto -->
+      <div class="menu-responsive-list">
+          <div id="sixth-logo">
+            <i class="fa-solid fa-earth-americas"></i>
+         </div>
+         
+         <div class="list">
+           <h4>Comunità</h4>
+           <select name="Film" id="list-options-6">
+             <option selected value=""> </option>
+             <option value="">Calendario uscite</option>
+             <option value="">Versioni DVD e Blu-ray</option>
+             <option value="">I 250 migliori film</option>
+             <option value="">Film più popolari</option>
+             <option value="">Cerca film per genere</option>
+             <option value="">I migliori botteghini</option>
+             <option value="">Orari e biglietti</option>
+             <option value="">Prossimamente</option>
+             <option value="">Notizie film</option>
+             <option value="">Film indiani in evidenza</option>
+           </select>
+         </div>
+      </div>
+
+      <div id="footer-menu-responsive">
+         <div id="footer-menu-responsive-text">
+          <h5>IMDbPro</h5>
+          <p>Per i professionisti del settore</p>
+         </div>
+         <div id="footer-menu-responsive-logo">
+            <i class="fa-solid fa-up-right-from-square"></i>
+         </div>
+      </div>
+
+
+</div>
+<!-- Button Search Mobile -->
+  <div id="container-search">
+      <input type="text" placeholder="Cerca su IMDb" id="input-search" >
+      <button id="btn-search"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+<!-- <div class="container"> -->
+
+<!-- NAVBAR -->
+        <!-- Html navbar -->
+        <nav>
+            <div class="navbar">
+                <div id="nav-img">
+                  <!-- Menu per sito responsive -->
+                  <button id="menu-responsive-btn"><i class="fa-solid fa-bars"></i></button>
+                  <!--^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ -->
+                   <a href="./index.html"><img src="../images/logo-Navbar.jpg" alt="" id="logo-nav"></a>
+                </div>
+
+                <div id="menu-choice">
+                    <button id="menu-btn">
+                      <i class="fa-solid fa-bars"></i>
+                      <h4 id="menu-h4">Menu</h4>
+                    </button>
+                </div>
+
+                <div class="input-nav">
+                    <select id="input-list">
+                    <option value="Tutto" selected>Tutto</option>
+                    <option value="Titoli">Titoli</option>
+                    <option value="Episodi TV">Episodi TV</option>
+                    <option value="Celebrità">Celebrità</option>
+                    <option value="Aziende">Aziende</option>
+                    <option value="Parole chiave">Parole chiave</option>
+                    <option value="Ricerca avanzata">Ricerca Avanzata</option>
+                    </select> 
+                 </div>
+                    <div class="input-container-nav">
+                        <input type="text" placeholder="Cerca su IMDb" id="inputtext-nav"> 
+                        <button type="submit"id="search-button">
+                        <img src="../images/search-icon.png" alt="" >
+                        </button>
+                    </div>
+                    <!-- Mobile responsive, search button -->
+                    <div id="mobile-search">
+                        <button id="mobile-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+                <div id="list-nav">
+                    <div id="ul-nav">
+                    <ul>
+                       <li id="text-decoration-ul"><a href="">IMDbPro</a></li>
+                       <li id="ul-divider"></li>
+                       <li id="videolist-container">
+                            <div id="right-icon">
+                                <div class="croce">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                
+                                <div class="ribbon" role="button">
+                                    <i class="fa-solid fa-bookmark fa-lg"></i>
+                                </div>
+                            </div>
+                            <a href="">Lista Video</a>
+                        </li>
+                       <li id="accedi-ul"><a href="">Accedi</a></li>
+                    </ul>
+                    </div>
+                    
+
+                    <div id="lang-container" > 
+                        <select id="lang-nav">
+                            <option value="EN">English(US)</option>
+                            <option value="FR">Français</option>
+                            <option value="DE">Deutsch</option>
+                            <option value="IN">Hindi</option>
+                            <option value="IT"selected>Italiano</option>
+                            <option value="PT">Português</option>
+                            <option value="ES">Espanol(Espana)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+<div id="background-grey">
+<!-- TRAILER SECTION + INFO FILM -->
+<div id="container-more-trailer">
+
+    <div id="more-trailer-top">
+        <div id="more-trailer-title">
+            <h1>Spider-Man: No Way Home </h1>
+            <p>2021 - T - 2h 28min</p>
+        </div>
+        <div id="more-trailer-valutations">
+            <ul>
+                <li> 
+                    <div id="li-1">
+                        <p>VALUTAZIONE IMDb</p>
+                        <i class="fa-solid fa-star"></i>
+                        <h4>8,4</h4>
+                        <p id="p-10">/10</p>
+                        <p id="p-votes">615.227</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="li-2">
+                        <p>LA TUA VALUTAZIONE</p>
+                        <i class="fa-regular fa-star fa-star-2"></i>
+                        <p id="valuta">Valuta</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="li-3">
+                        <p>POPOLARITÀ</p>
+                        <i class="fa-solid fa-arrow-trend-down" id="arrow-trend"></i>
+                        <p id="p-17">17</p>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <p id="p-6">6</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="second-container">
+        <ul>
+             <li class="second-container-text">
+                <p>Interpreti</p>
+            </li>
+            
+            <li>
+            <p class="point">•</p>
+            </li>
+
+            <li class="second-container-text">
+                <p>Recensioni degli utenti</p>
+            </li> 
+
+            <li>
+            <p class="point">•</p>
+            </li>
+
+
+            <li class="second-container-text">
+                <p>Quiz</p>
+            </li>
+
+            <li>
+            <p class="point">•</p>
+            </li>  
+            
+            <li class="second-container-text">
+                <p>IMDbPro</p>
+            </li>
+            
+            <li class="second-container-text" id="topic">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <h4 id="all-elements">Tutti gli argomenti</h4>
+            </li>
+
+            <li class="second-container-text">
+                <h5 id="right-line"> </h5>
+            </li>
+
+
+            <li class="second-container-text" id="share-container">
+                <i class="fa-solid fa-share-nodes"></i>
+            </li>
+        </ul> 
+    </div>
+
+
+    <div class="container-trailer-film" id="container-trailer">
+        <div id="left-poster">
+            <div class="add-button">
+                <div class="croce">
+                  <i class="fa-solid fa-plus fa-lg"></i>
+                  </div>
+              
+                <div class="ribbon" role="button">
+                  <i class="fa-solid fa-bookmark fa-3x"></i>
+                  </div>
+                </div>
+            <img src="https://image.tmdb.org/t/p/original/1z7ZQhga4AcSkQNqEU3Tf9XpxoX.jpg" alt="spiderman-no-way-home" id="trailer-poster">
+        </div>
+        <div class="left-trailer_film">
+            <video
+                id="mio-video" 
+                class="video-js"
+                controls
+                poster="https://i.ytimg.com/vi/ZBPAGbR6AHM/maxresdefault.jpg"
+                data-setup="{}"
+            >  
+                <source src="../videos/no_way_home_trailer.mp4" type="video/mp4"/>
+            </video>
+
+        </div>
+        <div id="right-trailer">
+            <div id="video">
+                <div class="fifth-logo" id="right-logo-video">
+                    <div class="fifth-logo-play" id="play-logo">
+                        <i class="fa-solid fa-play" id="fa-play"></i>
+                    </div>
+                    <div class="fifth-logo-square" id="square-logo">
+                        <i class="fa-solid fa-square" id="fa-square"></i>
+                    </div>
+                </div>
+                <p>20 VIDEO</p>
+            </div>
+            <div id="id"right-divider>
+                <p id="divider"></p>
+            </div>
+            <div id="foto">
+                <i class="fa-solid fa-images"></i>
+                <p>99+ FOTO</p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons-news">
+        <div id="btn-news">
+          <button>Azione</button>
+          <button>Avventura</button>
+          <button>Fantastico</button>
+      </div>
+      </div>
+
+      <div id="final-container">
+        <div id="final-container-left"> 
+                <div id="plot">
+                    <h4>Con l'identità di Spider-Man rivelata, Peter chiede aiuto al Dottor Strange. 
+                        Qualcosa va storto e il multiverso diventa la più grande minaccia. 
+                        Ora lui deve scoprire cosa significa veramente essere Spider-Man.</h4>
+                </div>
+                <hr class="hr">
+                <div id="regia">
+                    <h4>Regia</h4>
+                    <h4 id="regia-blu">Jon Watts</h4>
+                </div>
+                <hr class="hr">
+                <div id="scenegg">
+                    <h4>Sceneggiatura</h4>
+                    <ul>
+                        <li>Chris McKenna</li>
+                        <li>•</li>
+                        <li>Erik Sommers</li>
+                        <li>•</li>
+                        <li>Stan Lee</li>
+                        <h3 id="based">(based on the Marvel comic book by)</h3>
+                        <li><i class="fa-solid fa-angle-right" id="angle-right"></i></li>
+                    </ul>
+                </div>
+                <hr class="hr">
+                <div id="star">
+                    <h4>Star</h4>
+                    <ul>
+                        <li>Tom Holland</li>
+                        <li>•</li>
+                        <li>Zendaya</li>
+                        <li>•</li>
+                        <li>Benedict Cumberbatch</li>
+                        <li><i class="fa-solid fa-angle-right" id="fa-angle-right"></i></li>
+                    </ul>
+                </div>
+                <hr class="hr">
+                <div id="information">
+                    <h4>IMDb</h4>
+                    <h4 id="pro">Pro</h4>
+                    <h5>Vedi prdouzione,biglietteria e informazioni sull'azienda</h5>
+                    <i class="fa-solid fa-up-right-from-square" id="link-information"></i>
+                </div>
+            </div> 
+            <div class="mobile-valutations">
+                <ul>
+                    <li> 
+                        <div class="li-1">
+                            <i class="fa-solid fa-star" id="mobile-star"></i>
+                            <h4>8,4</h4>
+                            <p id="p-10">/10</p>
+                            <p id="p-votes">615.227</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-2">
+                            <i class="fa-regular fa-star fa-star-2" id="mobile-star-2"></i>
+                            <p id="valuta">Valuta</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li-3">
+                            <i class="fa-solid fa-arrow-trend-down arrow-trend"></i>
+                            <p id="p-17">17</p>
+                            <i class="fa-solid fa-caret-down caret-down"></i>
+                            <p id="p-6">6</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="crediti-in-evidenza">
+                <i class="fa-solid fa-angle-down angle-evidenza"></i>
+                <h5>Crediti in evidenza</h5>
+            </div>
+            <div id="final-container-right">
+                <div id="watch-prime">
+                    <ul>
+                        <li><i class="fa-regular fa-circle-play" id="regular-circle"></i></li>
+                        <li id="watch">Watch on Prime Video <i class="fa-solid fa-up-right-from-square" id="prime-square"></i></li>
+                        <li id="buy">rent/buy from EUR3.99</li>
+                    </ul>
+                </div>
+                <div id="add-video">
+                    <p><i class="fa-solid fa-plus" id="fa-plus"></i> Aggiungi alla lista video</p>
+                </div>
+                <div id="angle">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                
+                <div id="recensioni">
+                    <div class="recensioni-numero">
+                        <p id="p1">5.8K</p>
+                        <p id="p2">Recensioni degli utenti</p>
+                    </div>
+                    <div class="recensioni-numero">
+                        <p id="p3">379</p>
+                        <p id="p4">Recensioni della critica</p>
+                    </div>
+                        <p id="p5">71</p>
+                        <p id="p6">Metascore</p>
+                </div>
+                
+                
+            </div>
+      </div>
+        <hr id="final-hr">
+        <div id="scopri-di-piu">
+            <p>Scopri di più su IMDbPro <i class="fa-solid fa-up-right-from-square"></i></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+  <div id="footer">
+        <div id="footer-icons">
+          <i class="fa-brands fa-facebook-square icon"></i>
+          <i class="fa-brands fa-instagram icon"></i>
+          <i class="fa-brands fa-twitch icon"></i>
+          <i class="fa-brands fa-twitter icon"></i>
+          <i class="fa-brands fa-youtube icon"></i>
+        </div>
+        <div id="footer-link">
+              <div class="link">
+                  <p class="link-text download-app-delete">Scarica l'app IMDb</p>
+                  <i class="fa-solid fa-up-right-from-square download-app-delete"></i>
+              </div>
+              <div class="link">
+                  <p class="link-text">Aiuto</p>
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+              <div class="link">
+                  <p class="link-text">Indice del sito</p>
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+              <div class="link">
+                  <p class="link-text">IMDbPro</p>
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+              <div class="link" id="box-office">
+                  <p class="link-text">Box Office Mojo</p>
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+              <div class="link" id="developer">
+                  <p class="link-text">Sviluppatore IMDb</p>
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+        </div>
+
+        <div id="footer-link2">
+              <div class="link">
+                  <p class="link-text">Sala stampa</p>
+              </div>
+              <div class="link">
+                  <p class="link-text">Pubblicità</p>
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+              <div class="link">
+                  <p class="link-text">Processi</p>
+                  <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+              <div class="link" id="conditions-of-use">
+                  <p class="link-text">Condizioni d'uso</p>
+              </div>
+              <div class="link" id="privacy">
+                  <p class="link-text">Informativa sulla privacy</p>
+              </div>
+        </div>
+        <div id="footer-link3">
+            <div class="link">
+                <p class="link-text">Pubblicità definita in base agli interessi</p>
+                <i class="fa-solid fa-up-right-from-square"></i>
+            </div>
+        </div>
+        <div id="footer-link4">
+            <div class="amazon-pubblicity">
+                <p class="text">an</p>
+                <img id="amazon-logo" src="https://i.pinimg.com/originals/47/b7/bd/47b7bdac4285ee24654ca7d68cf06351.png" alt="">
+                <p class="text">company</p>
+            </div>
+        </div>
+        <div id="footer-5">
+            <p id="copyright-text">&copy; 1990-2022 by IMDb.com, Inc.</p>
+        </div>
+  </div>
+</footer>
+</div>
+</body>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="../script/app.js"></script>
+<script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+</html>
